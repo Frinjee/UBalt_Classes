@@ -1,0 +1,131 @@
+-----------------------------------------------------------------------------------
+                  [NON-STOCK THIRD PARTY APPS]                   
+-----------------------------------------------------------------------------------
+com.skype.raider (installer: com.android.vending)
+com.radicalapps.cyberdust (installer: com.android.vending)
+com.thinkyeah.galleryvault (installer: com.android.vending)
+org.telegram.messenger (installer: com.android.vending)
+com.viber.voip (installer: com.android.vending)
+com.whatsapp (installer: com.android.vending)
+jp.naver.line.android (installer: com.android.vending)
+com.discord (installer: com.android.vending)
+com.instagram.threadsapp (installer: com.android.vending)
+com.mywickr.wickr2 (installer: com.android.vending)
+com.silentcircle.silentphone (installer: com.android.vending)
+com.instagram.android (installer: com.android.vending)
+com.mewe (installer: com.android.vending)
+com.wire (installer: com.android.vending)
+kik.android (installer: com.android.vending)
+org.thoughtcrime.securesms (installer: com.android.vending)
+com.twitter.android (installer: com.android.vending)
+com.enflick.android.TextNow (installer: com.android.vending)
+com.skout.android (installer: com.android.vending)
+org.torproject.torbrowser (installer: com.android.vending)
+com.zhiliaoapp.musically (installer: com.android.vending)
+com.spotify.music (installer: com.android.vending)
+com.facebook.orca (installer: com.android.vending)
+com.venmo (installer: com.android.vending)
+com.imgur.mobile (installer: com.android.vending)
+com.imo.android.imous (installer: com.android.vending)
+com.snapchat.android (installer: com.android.vending)
+-----------------------------------------------------------------------------------
+                        [SIDELOADED APPS]                        
+-----------------------------------------------------------------------------------
+com.topjohnwu.magisk (installer: com.google.android.packageinstaller)
+-----------------------------------------------------------------------------------
+                [Preloaded - OEM|Carrier|Google]                 
+-----------------------------------------------------------------------------------
+com.google.android.ext.services
+com.google.android.ext.shared
+com.qualcomm.ltebc_vzw
+com.quicinc.cne.CNEService
+com.qualcomm.qti.uceShimService
+com.qualcomm.qti.telephonyservice
+com.qti.qualcomm.datastatusnotification
+org.codeaurora.ims
+com.google.android.permissioncontroller
+com.qualcomm.qcrilmsgtunnel
+com.google.android.packageinstaller
+com.google.android.tag
+com.google.android.printservice.recommendation
+com.google.android.networkstack.permissionconfig
+com.qualcomm.qti.confdialer
+com.qti.ltebc
+qualcomm.com.vzw_msdc_api
+com.google.pixel.crosshatch.gamedriver
+com.qualcomm.timeservice
+com.qualcomm.atfwd
+com.qualcomm.embms
+com.google.android.captiveportallogin
+com.google.android.modulemetadata
+com.google.android.networkstack
+com.google.android.documentsui
+-----------------------------------------------------------------------------------
+            [User Installed (Updated via GAPP Store)]            
+-----------------------------------------------------------------------------------
+com.google.android.youtube (installer: com.android.vending)
+com.google.android.googlequicksearchbox (installer: com.android.vending)
+com.google.android.apps.docs.editors.docs (installer: com.android.vending)
+com.google.android.trichromelibrary_394513638 (installer: com.android.vending)
+com.google.android.apps.podcasts (installer: com.android.vending)
+com.google.android.apps.messaging (installer: com.android.vending)
+com.google.android.soundpicker (installer: com.android.vending)
+com.google.ar.core (installer: com.android.vending)
+com.android.vending (installer: com.android.vending)
+com.google.android.marvin.talkback (installer: com.android.vending)
+com.google.android.deskclock (installer: com.android.vending)
+com.google.android.as (installer: com.android.vending)
+com.google.android.gm (installer: com.android.vending)
+com.google.android.apps.tachyon (installer: com.android.vending)
+com.google.intelligence.sense (installer: com.android.vending)
+com.google.android.euicc (installer: com.android.vending)
+com.google.android.music (installer: com.android.vending)
+com.google.android.apps.wellbeing (installer: com.android.vending)
+com.google.android.dialer (installer: com.android.vending)
+com.google.audio.hearing.visualization.accessibility.scribe (installer: com.android.vending)
+com.google.android.captiveportallogin (installer: com.android.vending)
+com.google.android.accessibility.soundamplifier (installer: com.android.vending)
+com.google.android.apps.docs (installer: com.android.vending)
+com.google.android.apps.maps (installer: com.android.vending)
+com.google.android.apps.tips (installer: com.android.vending)
+com.google.android.modulemetadata (installer: com.android.vending)
+com.google.android.webview (installer: com.android.vending)
+com.google.android.networkstack (installer: com.android.vending)
+com.google.android.contacts (installer: com.android.vending)
+com.google.android.calculator (installer: com.android.vending)
+com.android.chrome (installer: com.android.vending)
+com.google.android.gms (installer: com.android.vending)
+com.google.android.ims (installer: com.android.vending)
+com.google.android.tts (installer: com.android.vending)
+com.google.android.apps.walletnfcrel (installer: com.android.vending)
+com.google.android.videos (installer: com.android.vending)
+com.google.android.apps.photos (installer: com.android.vending)
+com.google.android.calendar (installer: com.android.vending)
+com.google.android.documentsui (installer: com.android.vending)
+com.google.android.apps.pixelmigrate (installer: com.android.vending)
+com.google.android.settings.intelligence (installer: com.android.vending)
+com.google.android.projection.gearhead (installer: com.android.vending)
+com.google.android.apps.turbo (installer: com.android.vending)
+com.google.android.apps.tycho (installer: com.android.vending)
+com.google.android.apps.chromecast.app (installer: com.android.vending)
+com.google.android.keep (installer: com.android.vending)
+com.google.vr.vrcore (installer: com.android.vending)
+com.google.vr.apps.ornament (installer: com.android.vending)
+com.google.android.apps.youtube.music (installer: com.android.vending)
+com.google.android.apps.helprtc (installer: com.android.vending)
+com.google.android.apps.magazines (installer: com.android.vending)
+com.google.android.apps.gcs (installer: com.android.vending)
+com.google.android.GoogleCamera (installer: com.android.vending)
+com.google.android.inputmethod.latin (installer: com.android.vending)
+-----------------------------------------------------------------------------------
+===================================================================================
+                    Breakdown of packages.xml                    
+===================================================================================
+Pure Stock (AOSP)                              229
+Preloaded OEM/Google/Carrier ("default app")    25
+User Installed GApps updated via Google Play    54
+User Installed Non-Stock Third Party            27
+Sideloaded (Not Play Store)                      1
+-----------------------------------------------------------------------------------
+Total                                          336
+-----------------------------------------------------------------------------------
