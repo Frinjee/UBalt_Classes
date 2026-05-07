@@ -5,6 +5,7 @@
 # all challenge pages seem similar & stable to use just the first challenge pg source as reference for divs, slugs, etc to refer ->
 # regex, pull from
 # screenshots within repository for additional reference [pgsrc_chall-list.png, pgsrc_divspanrefer.png]
+# https://raw.githubusercontent.com/Frinjee/UBalt_Classes/refs/heads/main/UBalt_Spring26/CYFI-330_700/Belkasoft7CTF/blka7.py
 
 import requests
 import argparse
@@ -87,12 +88,12 @@ def page_parser(raw: str) -> str:
 	# fallback best option i think to try to scan flattened page text to look for the question -> description area
 	if not fill_desc:
 		t = tags(raw)
-		lines = [x.strip() for x in t.splitlines() if x.strip()]
+		ls = [x.strip() for x in t.splitlines() if x.strip()]
 
-		for i, line in enumerate(lines):
-			if 'Format:' in line or ('What is' in line and i > 0):
+		for i, l in enumerate(l):
+			if 'Format:' in l or ('What is' in l and i > 0):
 				start = max(0, i - 1)
-				fill_desc = '\n'.join(lines[start:start + 4]).strip()
+				fill_desc = '\n'.join(ls[start:start + 4]).strip()
 				break
 
 	header = ' | '.join(x for x in [
@@ -110,10 +111,30 @@ def fetch_desc(slug: str) -> str:
 	req.raise_for_status()
 	return page_parser(req.text)
 
+# flag submission __TESTING__
+def capture_flag(slug: str, flag: str) -> str:
+	url = f'{BASE_URL}/{slug}'
+	# X-Req-With to mimic jQuery AJAX for JS obj return vs full HTML page
+	res = requests.post(url, data={'flag': flag}, timeout=15, headers={'Content-Type': 
+						'application/x-www-form-urlencoded', 'Referer': url})
+
+	res.raise_for_status()
+	raw = res.text
+
+	# server returns JS Obj literal for AJAX (ref scriptx2.js on site)
+	# ex: ({"code":200, "res"}) -> correct flag, ctf over msg
+	# ex: ({"code":400}, "res") -> wrong flag
+	m = re.search(r'<div\s+class=[\'"]result[\'"]>(.*?)</div>', raw, re.I | re.S)
+
+	if m:
+		return tags(m.group(1)).strip()
+
+
 def main():
 	ap = argparse.ArgumentParser()
 	ap.add_argument('--challenge', required=False, help='specify chall #/slug')
 	ap.add_argument('--list', action='store_true')
+	ap.add_argument('--flag', required=False, help='flag to submit, challenge # enforced')
 	args = ap.parse_args()
 
 	if args.list:
@@ -133,6 +154,16 @@ def main():
 			sys.exit(2)
 	else:
 		slug = val
+
+	if args.flag:
+		try:
+			result = capture_flag(slug, args.flag.strip())
+			print(f'[flag check] {result}')
+		except Exception as e:
+			print(f'error: {e}', file=sys.stderr)
+			sys.exit(1)
+
+		return
 
 	try:
 		print(fetch_desc(slug))
